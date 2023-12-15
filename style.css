@@ -27,9 +27,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 5px;
+  margin: 10px;
   padding: 15px;
-  width: 300px;
 }
 
 nav a {
@@ -66,15 +65,10 @@ li {
 .opcoes-contato {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin: 2px;
 }
 
-.opcoes-contato a {
-  display: inline-block;
-  margin: 0 10px;
-  text-decoration: none;
-  color: #1e90ff;
-}
+
 
 .opcoes-contato a img {
   max-width: 40px;
@@ -146,4 +140,7 @@ footer {
   transform: translateY(-0.8px);
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.229);
   border-radius: 5px;
+}
+.opcoes-contato h1{
+  font-size: 2em;
 }
