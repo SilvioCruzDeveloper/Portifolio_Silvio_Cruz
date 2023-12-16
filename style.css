@@ -144,3 +144,26 @@ footer {
 .opcoes-contato h1{
   font-size: 2em;
 }
+.proj div {
+display: inline-block;
+margin: 50px auto;
+
+
+}
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* Proporção 16:9 */
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 450px;
+  height: 100%;
+  border-radius: 10px;
+  margin: auto;
+  padding: auto;
+}
