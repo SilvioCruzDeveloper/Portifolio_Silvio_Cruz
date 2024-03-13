@@ -31,3 +31,21 @@ document.addEventListener("DOMContentLoaded", function () {
     goToSection("skills");
   });
 });
+function slider() {
+  // Seleciona o elemento com o ID "meuElemento"
+  var meuElemento = document.getElementById("meuElemento");
+
+  // Verifica o estado atual da margem superior
+  var marginTopAtual = parseInt(meuElemento.style.marginTop, 10) || 0;
+
+  // Se a margem superior for 0, define como 170px
+  if (marginTopAtual === 0) {
+    meuElemento.style.marginTop = "170px"; // Adiciona a margem superior de 170px
+  } else {
+    meuElemento.style.marginTop = "0"; // Define a margem superior como 0
+  }
+}
+
+// Chamada da função slider quando necessário
+// Por exemplo, quando um botão é clicado
+document.getElementById("botaoSlider").addEventListener("click", slider);

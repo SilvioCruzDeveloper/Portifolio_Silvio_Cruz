@@ -14,9 +14,6 @@ body {
   background-color: #f5f5f5;
   color: #333;
   line-height: 1.6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
 }
 
@@ -61,12 +58,6 @@ ul {
 
 li {
   margin-bottom: 5px;
-}
-
-footer {
-  background-color: #f8f9fa;
-  padding: 20px;
-  text-align: center;
 }
 
 .iframe-container {
@@ -120,4 +111,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.cont {
+  margin-top: 80px;
+}
+#meuElemento {
+  transition: margin-top .4s ease;
 }
