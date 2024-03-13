@@ -14,10 +14,13 @@ body {
   background-color: #f5f5f5;
   color: #333;
   line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 header {
-  background-color: #66666617;
   color: #000000;
   padding: 10px;
   margin: 1px 0px 0px 0px;
@@ -32,17 +35,14 @@ nav {
 }
 
 nav a {
-  color: #fff;
   text-decoration: none;
   margin: 1px;
   padding: 1px;
 }
 
 main {
-  max-width: 800px;
-  margin: 20px auto;
+  margin: 5px auto;
   padding: 20px;
-  background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -63,89 +63,10 @@ li {
   margin-bottom: 5px;
 }
 
-.opcoes-contato {
-  display: flex;
-  justify-content: center;
-  margin: 2px;
-}
-
-.opcoes-contato a img {
-  max-width: 40px;
-  height: auto;
-}
-
-.opcoes-contato a:hover {
-  color: #ffd700;
-}
-
 footer {
   background-color: #f8f9fa;
   padding: 20px;
   text-align: center;
-}
-.cont {
-  margin: 90px 30px 30px 30px;
-  padding: 40px;
-  background-color: #fff;
-}
-.instagram-icon {
-  font-size: 30px;
-  color: #e1306c; /* Cor oficial do Instagram */
-  margin-right: 10px;
-}
-
-.name {
-  font-size: 1.5em;
-}
-
-.opcoes-contato a {
-  padding: 0px;
-  display: inline-block;
-  margin: 0 10px;
-  text-decoration: none;
-  color: #1e90ff;
-  position: relative;
-  transition: transform 0.3s ease-out;
-}
-
-.opcoes-contato a img {
-  max-width: 60px;
-  height: auto;
-}
-
-.opcoes-contato a:hover img {
-  transform: rotate(360deg);
-}
-
-.opcoes-contato a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 10px;
-  text-decoration: none;
-  color: #1e90ff;
-  position: relative;
-  transition: transform 0.3s ease-out;
-}
-
-.opcoes-contato a img {
-  max-width: 40px;
-  height: auto;
-}
-
-.opcoes-contato a:hover img {
-  transform: translateY(-10px);
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.229);
-  border-radius: 5px;
-}
-
-.opcoes-contato h1 {
-  font-size: 2em;
-}
-
-.proj div {
-  display: inline-block;
-  margin: 50px auto;
 }
 
 .iframe-container {
@@ -165,14 +86,14 @@ footer {
   margin: auto;
   padding: auto;
 }
-
 /* Barra de Navegação */
 .barra-navegacao {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 10px 0;
+  padding: 0;
+
   z-index: 1000; /* Para garantir que a barra esteja sempre acima do conteúdo */
 }
 
@@ -188,12 +109,15 @@ footer {
 }
 
 .barra-navegacao ul li a {
-  color: rgb(0, 0, 0);
+  margin-top: 0px;
   text-decoration: none;
 }
 
 /* Espaço para conteúdo abaixo da barra de navegação */
 .conteudo {
-  padding: 20px;
+  padding: 1px;
   margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
