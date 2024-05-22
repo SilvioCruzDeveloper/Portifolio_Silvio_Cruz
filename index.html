@@ -8,6 +8,7 @@
     <meta name="robots" content="index, follow" />
     <link rel="stylesheet" href="/styles/global.css" />
     <link rel="stylesheet" href="/styles/fontawesome/css/all.min.css" />
+    <base target="_top" />
   </head>
   <body>
     <!-- COMEÇO DO NAVBAR -->
@@ -101,7 +102,10 @@
                 </a>
               </p>
             </div>
-            <div class="service">
+            <div
+              class="service"
+              onclick="openUrl('https://www.linkedin.com/in/silvio-cruz-933234280/')"
+            >
               <img
                 class="github"
                 alt="Mark Zuck"
@@ -118,15 +122,16 @@
                 src="images/abau.png"
               />
               <h3 style="margin-right: 10px">
-                Meu tempo de codificação nos últimos 30 dias tem sido de
+                Meu tempo de codificação nos Últimos 7 Dias
+                <br />
+                <div style="width: 150px; height: auto; overflow: hidden">
+                  <img
+                    class="time"
+                    src="https://img.shields.io/endpoint?style=social&color=222&url=https%3A%2F%2Fapi.codetime.dev%2Fshield%3Fid%3D25657%26project%3D%26in=0"
+                    alt="img"
+                  />
+                </div>
               </h3>
-              <div style="width: 150px; height: auto; overflow: hidden">
-                <img
-                  class="time"
-                  src="https://img.shields.io/endpoint?style=social&color=222&url=https%3A%2F%2Fapi.codetime.dev%2Fshield%3Fid%3D25657%26project%3D%26in=0"
-                  alt="img"
-                />
-              </div>
             </div>
             <div class="service">
               <h2>tecnologias que eu utilizo</h2>
@@ -402,6 +407,7 @@
                 <a
                   href="https://github.com/SilvioCruzDeveloper/Logia-de-Pesquisa-Binaria"
                   class="btn"
+                  target="_blank"
                   >Github</a
                 >
                 <a
@@ -520,36 +526,36 @@
       <!-- FIM DA SECÇÃO DE MARCAS -->
 
       <!-- COMEÇO DA SECÇÃO DE CONTACTO -->
-      <!-- <section id="contact">
-        <div class="inner-content">
-          <h2 class="section-title">Envie-me Uma <span>Mensagem</span></h2>
-          <p class="section-description">
-            Você pode usar o formulário abaixo para nos contactar ou usar outros
-            meios listados a seguir.
-          </p>
-          <form>
-            <div class="form-group">
-              <input type="text" placeholder="Seu Nome" />
-              <input type="email" placeholder="Seu Email" />
-            </div>
-            <div class="form-group">
-              <input type="number" placeholder="Seu Telefone" />
-              <input type="text" placeholder="Sua localização" />
-            </div>
-            <textarea placeholder="Sua Mensagem" rows="10"></textarea>
-            <button type="submit" class="btn">Enviar Mensagem</button>
-          </form>
-        </div>
-      </section> -->
-      <!-- FIM DA SECÇÃO DE CONTACTO -->
 
-      <!-- COMEÇO DA SECÇÃO DE BASEBOARD -->
-      <section id="baseboard">
-        <div class="inner-content"></div>
-      </section>
       <!-- FIM DA SECÇÃO DE BASEBOARD -->
     </main>
     <!-- FIM DA PARTE PRINCIPAL -->
+    <section id="contact">
+      <div class="inner-content">
+        <h2 class="section-title">Envie-me Uma <span>Mensagem</span></h2>
+        <p class="section-description">
+          Você pode usar o formulário abaixo para nos contactar ou usar outros
+          meios listados a seguir.
+        </p>
+        <form
+          action="https://script.google.com/macros/s/AKfycbwETLCcwORETF7BhbH5A5rEAuw6N-7_YTxU7shrFaTqq7UouxQWXAbS6vgEHHqeUcLC/exec"
+          method="post"
+        >
+          <div class="form-group">
+            <input type="text" name="nome" placeholder="Seu Nome" required />
+            <input type="email" name="email" placeholder="Seu Email" required />
+          </div>
+          <textarea
+            name="mensagem"
+            placeholder="Sua Mensagem"
+            rows="10"
+            required
+          ></textarea>
+          <button type="submit" class="btn">Enviar Mensagem</button>
+        </form>
+        <div id="response-message"></div>
+      </div>
+    </section>
 
     <!-- COMEÇO DO FOOTER -->
     <footer>
@@ -560,14 +566,46 @@
     </footer>
     <!-- FIM DO FOOTER -->
   </body>
+  <script src="script.js"></script>
   <script>
     document.querySelector(".menu-btn").addEventListener("click", () => {
       document.querySelector("ul.menu").classList.toggle("show");
     });
   </script>
   <script>
+    document.querySelector(".menu-btn").addEventListener("click", () => {
+      document.querySelector("ul.menu").classList.toggle("show");
+    });
+
+    document
+      .getElementById("contact-form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+        const form = event.target;
+        const formData = new FormData(form);
+
+        fetch(
+          "https://script.google.com/macros/s/AKfycbx6BPaI-nRYrLT7VLuoX3-1YSqqCqHSaM8Ocbfckbfm-tVCz7N8aDVoysPKqVx1z3qs/exec",
+          {
+            method: "POST",
+            body: formData,
+          }
+        )
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("response-message").innerHTML = data;
+            form.reset();
+          })
+          .catch((error) => {
+            document.getElementById("response-message").innerHTML =
+              "Ocorreu um erro ao enviar a mensagem.";
+            console.error("Error:", error);
+          });
+      });
+  </script>
+  <!-- <script>
     function openUrl(url) {
       window.open(url, "_blank");
     }
-  </script>
+  </script> -->
 </html>
