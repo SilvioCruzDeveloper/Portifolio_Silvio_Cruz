@@ -6,11 +6,11 @@
 
 :root {
   --primary-color: #06f;
-  --dark-color: #0f0f0f;
+  --dark-color: #000000;
 }
 
 body {
-  background-color: var(--dark-color);
+  background-color: #000;
   color: #fff;
   font-family: "Courier New", Courier, monospace;
 }
@@ -49,11 +49,11 @@ button {
 }
 
 .section-title.primary span {
-  color: var(--dark-color);
+  color: #000;
 }
 
 .section-title.dark {
-  color: var(--dark-color);
+  color: #000;
 }
 
 .section-description {
@@ -80,7 +80,7 @@ button {
 /* COMEÇO DO NAVBAR */
 nav {
   background-color: #fff;
-  color: var(--dark-color);
+  color: #000;
   position: sticky;
   top: 0;
   box-shadow: 0px 5px 10px #ffffff36;
@@ -89,6 +89,12 @@ nav {
 nav .inner-content {
   display: flex;
   justify-content: space-between;
+  padding: 1rem;
+}
+nav .inner-footer {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
   padding: 1rem;
 }
 
@@ -189,7 +195,7 @@ header .right-side img {
 }
 
 #services .service {
-  background-color: #0f0f0f;
+  background-color: #000;
   padding: 0.6rem;
   border-radius: 10px;
 }
@@ -213,7 +219,7 @@ header .right-side img {
 
 /* COMEÇO DA SECÇÃO DE CONFIANÇA */
 #trust .inner-content {
-  background-color: #0f0f0f;
+  background-color: #000;
   padding: 0.6rem;
   border-radius: 10px;
   display: grid;
@@ -324,7 +330,7 @@ header .right-side img {
 #portifolio .projects .project {
   padding: 1rem;
   border-radius: 8px;
-  border: 1px solid var(--dark-color);
+  border: 1px solid #000;
 }
 
 #portifolio .projects .project img {
