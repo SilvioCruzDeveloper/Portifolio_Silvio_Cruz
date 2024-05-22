@@ -1,204 +1,332 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Silvio_Cruz</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Silvio Cruz</title>
+    <meta name="description" content="Mark Zuck" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/fontawesome/css/all.min.css" />
   </head>
   <body>
-    <div class="barra-navegacao">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Silvio Cruz Portifolio</a>
-          <button
-            onclick="slider()"
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="https://github.com/SilvioCruzDeveloper"
-                  target="_blank"
-                  onclick="scrollToTop()"
-                  >Github</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="https://www.linkedin.com/in/silvio-cruz-933234280/"
-                  target="_blank"
-                  >Linkedin</a
-                >
-              </li>
-            </ul>
+    <!-- COMEÇO DO NAVBAR -->
+    <nav>
+      <div class="inner-content">
+        <h1 class="logo"><span>M</span>ZUCK</h1>
+        <ul class="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+
+        <ul class="social-icons">
+          <li></li>
+            <a href="/" aria-label="open mzuck github"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="/" aria-label="open mzuck linkedin"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="/" aria-label="open mzuck facebook"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+        </ul>
+
+        <button class="menu-btn" aria-label="open navbar">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- FIM DO NAVBAR -->
+
+    <!-- COMEÇO DO HEADER -->
+    <header>
+      <div class="inner-content">
+        <div class="left-side" id="about">
+          <p>Olá, eu sou</p>
+          <h2><span>Silvio</span> Cruz</h2>
+          <p>
+            Eu crio aplicações web usando ferraments como reactjs, javascript,
+            html, css, php e diversas outras!
+          </p>
+          <div class="links">
+            <a href="#about" class="btn">Sobre</a>
+            <a href="#contact" class="btn">Contacto</a>
           </div>
         </div>
-      </nav>
-    </div>
-    <main id="meuElemento">
-      <div class="cont">
-        <div class="Projetos">
-          <div class="row justify-content-center">
-            <!-- Centralizando a linha (row) -->
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Projeto de Divulgação para um Programa de Participação nos
-                    Lucros e Resultados (PLR).
-                  </h5>
-                  <p class="card-text">
-                    Foi um trabalho feito para promover um curso sobre leitura e
-                    desenvolvimento pessoal.
-                  </p>
-                  <a
-                    href="https://leiturasagaz.vercel.app/"
-                    class="btn btn-primary"
-                    target="_blank"
-                    >Verifique</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Um pequeno site em Bootstrap para divulgar algumas
-                    comunidades de programação.
-                  </h5>
-                  <p class="card-text">
-                    Este é um site que criei para divulgar algumas comunidades
-                    de programação do WhatsApp.
-                  </p>
-                  <a
-                    href="https://filtro-pro-grupo.vercel.app/index.html"
-                    class="btn btn-primary"
-                    target="_blank"
-                    >Verifique</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Um site que calcula o seu salário líquido com base nas
-                    faltas e dias trabalhados no mês..
-                  </h5>
-                  <p class="card-text">
-                    Este site pode ser uma ferramenta útil para calcular o
-                    salário líquido de um indivíduo com base em faltas e dias
-                    trabalhados no mês.
-                  </p>
-                  <a
-                    href="https://calculo-dias-de-trabalho-md6m.vercel.app/"
-                    class="btn btn-primary"
-                    target="_blank"
-                    >Verifique</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Criei um joguinho para treinar lógica de pesquisa binária em
-                    JavaScript
-                  </h5>
-                  <p class="card-text">
-                    O "Desafio da Pesquisa Binária" é um jogo educativo que tem
-                    como objetivo ajudar os jogadores a praticar e entender
-                    melhor o funcionamento da pesquisa binária. Neste jogo, os
-                    jogadores serão desafiados a adivinhar um número escolhido
-                    aleatoriamente dentro de um intervalo específico, utilizando
-                    a lógica de pesquisa binária.
-                  </p>
-                  <a
-                    href="https://logia-de-pesquisa-binaria.vercel.app/"
-                    class="btn btn-primary"
-                    target="_blank"
-                    >Verifique</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Criei um site que redireciona o usuário para o meu WhatsApp.
-                  </h5>
-                  <p class="card-text">
-                    Um site criado para facilitar o contato direto entre o
-                    visitante e o criador do site, utilizando o aplicativo de
-                    mensagens WhatsApp.
-                  </p>
-                  <a
-                    href="https://meu-zapp.vercel.app/"
-                    class="btn btn-primary"
-                    target="_blank"
-                    >Verifique</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Exemplo de SiteIntitucional.</h5>
-                  <p class="card-text">
-                    Um exeplo de site responsivo pra restalrante
-                  </p>
-                  <a
-                    href="https://projeto-e2.vercel.app/"
-                    class="btn btn-primary"
-                    target="_blank"
-                    >Verifique</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
+
+        <div class="right-side">
+          <img alt="Mark Zuck" src="/images/profile.webp" />
         </div>
       </div>
+    </header>
+    <!-- FIM DO HEADER -->
+
+    <!-- COMEÇO DA PARTE PRINCIPAL -->
+    <main>
+      <!-- COMEÇO DA SECÇÃO DE SERVIÇOS -->
+      <section id="services">
+        <div class="inner-content">
+          <h2 class="section-title primary"><span>Meus</span> Serviços</h2>
+          <div class="services">
+            <div class="service">
+              <img
+              class="github"
+                alt="Mark Zuck"
+                loading="lazy"
+                decoding="async"
+                src="https://avatars.githubusercontent.com/u/137232326?v=4"
+                onclick="openUrl('https://github.com/SilvioCruzDeveloper')"
+                
+              />
+              <!-- quero uma funcao que abre um link -->
+            
+             
+              <h3>De uma olhada nos meus repositorios do Github</h3>
+              <p>
+                <a href="https://github.com/SilvioCruzDeveloper">
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SilvioCruzDeveloper&layout=donut&theme=dark)](https://github.com/SilvioCruzDeveloper" alt="Top Langs" />
+                </a>
+            </p>
+            </div>
+            <div class="service">
+              <img
+              class="github"
+                alt="Mark Zuck"
+                loading="lazy"
+                decoding="async"
+                src="images/linkdin.png"
+              />
+              <h3>De uma olhada no meu LinkedIn</h3>
+        
+            </div>
+            <div class="service">
+              <img
+              class="github"
+                alt="Mark Zuck"
+                loading="lazy"
+                decoding="async"
+                src="/images/service-3.webp"
+              />
+              <h3>Gerenciamento de Redes</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                mollitia harum sunt minus a exercitationem error deleniti
+                laborum delectus vero!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FIM DA SECÇÃO DE SERVIÇOS -->
+
+      <!-- COMEÇO DA SECÇÃO DE CONFIANÇA -->
+      <section id="trust">
+        <div class="inner-content">
+          <img
+            alt="Mark Zuck"
+            src="/images/meta.webp"
+            loading="lazy"
+            decoding="async"
+            class="left-side"
+          />
+          <div class="right-side">
+            <p>Porquê Me Escolher Como Seu Desenvolvedor?</p>
+            <h2><span>3 razões</span> para me escolher</h2>
+            <div class="trust-cards">
+              <div class="card">
+                <i class="fas fa-scale-balanced"></i>
+                <div class="description">
+                  <h3>EXPERIÊNCIA</h3>
+                  <p>
+                    Acho que nem preciso falar disso, eu sou o criador da maior
+                    rede social do mundo
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <i class="fas fa-users"></i>
+                <div class="description">
+                  <h3>FOCO NO CLIENTE</h3>
+                  <p>
+                    Priorizo as necessidades individuais dos nossos clientes e
+                    fornecemos soluções personalizadas.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <i class="fas fa-suitcase"></i>
+                <div class="description">
+                  <h3>REPUTAÇÃO</h3>
+                  <p>
+                    Construo uma sólida reputação de confiabilidade e
+                    integridade ao longo dos anos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="links">
+              <a href="#about" class="btn">Sobre</a>
+              <a href="#contact" class="btn">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FIM DA SECÇÃO DE CONFIANÇA -->
+
+      <!-- COMEÇO DA SECÇÃO DE MARCAS -->
+      <section id="brands">
+        <div class="inner-content">
+          <h2 class="section-title">
+            <span>Marcas Que </span>Trabalharam Comigo
+          </h2>
+          <div class="brands">
+            <img
+              alt="Mark Zuck"
+              src="/images/brands/adidas-logo.png"
+              loading="lazy"
+              decoding="async"
+              class="brand"
+            />
+            <img
+              alt="Mark Zuck"
+              src="/images/brands/fwpm-logo.png"
+              loading="lazy"
+              decoding="async"
+              class="brand"
+            />
+            <img
+              alt="Mark Zuck"
+              src="/images/brands/amazon-logo.png"
+              loading="lazy"
+              decoding="async"
+              class="brand"
+            />
+
+            <img
+              alt="Mark Zuck"
+              src="/images/brands/nike-logo.png"
+              loading="lazy"
+              decoding="async"
+              class="brand"
+            />
+            <img
+              alt="Mark Zuck"
+              src="/images/brands/uanela-u-logo.png"
+              loading="lazy"
+              decoding="async"
+              class="brand"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- FIM DA SECÇÃO DE MARCAS -->
+
+      <!-- COMEÇO DA SECÇÃO DE CONTACTO -->
+      <section id="contact">
+        <div class="inner-content">
+          <h2 class="section-title">Envie-me Uma <span>Mensagem</span></h2>
+          <p class="section-description">
+            Você pode usar o formulário abaixo para nos contactar ou usar outros
+            meios listados a seguir.
+          </p>
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Seu Nome" />
+              <input type="email" placeholder="Seu Email" />
+            </div>
+            <div class="form-group">
+              <input type="number" placeholder="Seu Telefone" />
+              <input type="text" placeholder="Sua localização" />
+            </div>
+            <textarea placeholder="Sua Mensagem" rows="10"></textarea>
+            <button type="submit" class="btn">Enviar Mensagem</button>
+          </form>
+        </div>
+      </section>
+      <!-- FIM DA SECÇÃO DE CONTACTO -->
+
+      <!-- COMEÇO DA SECÇÃO DE PORTIFÓLIO -->
+      <section id="portifolio">
+        <div class="inner-content">
+          <h2 class="section-title dark"><span>Meus </span>Trabalhos</h2>
+          <div class="projects">
+            <div class="project">
+              <img
+                alt="Mark Zuck"
+                loading="lazy"
+                decoding="async"
+                src="/images/projects/project-1.webp"
+              />
+              <h3>Projecto 1</h3>
+              <div class="links">
+                <a href="https://github.com" class="btn">Github</a>
+                <a href="https://github.com" class="btn">Visitar</a>
+              </div>
+            </div>
+            <div class="project">
+              <img
+                alt="Mark Zuck"
+                loading="lazy"
+                decoding="async"
+                src="/images/projects/project-2.webp"
+              />
+              <h3>Projecto 2</h3>
+              <div class="links">
+                <a href="https://github.com" class="btn">Github</a>
+                <a href="https://github.com" class="btn">Visitar</a>
+              </div>
+            </div>
+            <div class="project">
+              <img
+                alt="Mark Zuck"
+                loading="lazy"
+                decoding="async"
+                src="/images/projects/project-3.webp"
+              />
+              <h3>Projecto 3</h3>
+              <div class="links">
+                <a href="https://github.com" class="btn">Github</a>
+                <a href="https://github.com" class="btn">Visitar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FIM DA SECÇÃO DE PORTIFÓLIO -->
+
+      <!-- COMEÇO DA SECÇÃO DE BASEBOARD -->
+      <section id="baseboard">
+        <div class="inner-content"></div>
+      </section>
+      <!-- FIM DA SECÇÃO DE BASEBOARD -->
     </main>
-    <footer class="contatos">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"
-            >Criado por Silvio Cruz</a
-          >
-        </li>
-      </ul>
+    <!-- FIM DA PARTE PRINCIPAL -->
+
+    <!-- COMEÇO DO FOOTER -->
+    <footer>
+      <div class="inner-content">
+        <h2 class="logo"><span>M</span>ZUCK</h2>
+        <p>&copy; Mark Zuckerberg, Copyright 2030</p>
+      </div>
     </footer>
-    <script src="nav.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <!-- FIM DO FOOTER -->
   </body>
+  <script>
+    document.querySelector(".menu-btn").addEventListener("click", () => {
+      document.querySelector("ul.menu").classList.toggle("show");
+    });
+  </script>
+    <script>
+      function openUrl(url) {
+        window.open(url, '_blank');
+      }
+    </script>
 </html>
